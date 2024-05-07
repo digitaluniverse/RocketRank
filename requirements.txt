@@ -1,0 +1,4 @@
+azure-functions
+fastapi
+playwright
+beautifulsoup4

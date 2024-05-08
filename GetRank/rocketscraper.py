@@ -23,7 +23,7 @@ async def create_browser(headless=True):
     proxy_password = os.environ.get('PROXY_PASSWORD')
 
 
-#test playwrights
+#test playwright
     playwright = await async_playwright().start()
     browser = await playwright.chromium.launch(headless=headless, proxy={
         "server": f"http://{proxy_host}:{proxy_port}",

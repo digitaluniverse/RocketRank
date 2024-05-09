@@ -31,9 +31,7 @@ jobs:
     - name: 'Install Playwright and Browsers'
       run: |
         pip install playwright
-        # Set the PLAYWRIGHT_BROWSERS_PATH environment variable to a directory in wwwroot
-        PLAYWRIGHT_BROWSERS_PATH=/home/site/wwwroot/my-playwright-browsers
-        export PLAYWRIGHT_BROWSERS_PATH
+        export PLAYWRIGHT_BROWSERS_PATH=/home/site/wwwroot/my-playwright-browsers
         playwright install
 
     - name: 'Login via Azure CLI'
